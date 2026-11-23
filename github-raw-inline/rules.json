@@ -1,0 +1,512 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.mp4([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "video/mp4"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.m4v([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "video/mp4"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.webm([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "video/webm"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.ogv([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "video/ogg"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.mp3([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "audio/mpeg"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.m4a([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "audio/mp4"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.ogg([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "audio/ogg"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.wav([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "audio/wav"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.pdf([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "application/pdf"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.png([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/png"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.jpg([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/jpeg"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.jpeg([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/jpeg"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.gif([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/gif"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.webp([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/webp"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.bmp([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "image/bmp"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.txt([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https://(raw|media)\\.githubusercontent\\.com/.*\\.log([?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "content-type",
+          "operation": "set",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "header": "content-disposition",
+          "operation": "remove"
+        },
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub raw — открывать во вкладке",
+  "description": "Видео, аудио, PDF, картинки и текст с raw/media.githubusercontent.com открываются во вкладке, а не скачиваются.",
+  "version": "1.0",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*",
+    "https://media.githubusercontent.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "inline", "enabled": true, "path": "rules.json" }]
+  }
+}
